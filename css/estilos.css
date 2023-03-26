@@ -27,11 +27,12 @@ font-family: 'Roboto Mono', monospace;
 .logo:hover {
     transform: scale(1.03);
     transition: 0.9s;
+    text-shadow: 3px 3px 50px #000;
 }
 
 .barra {
-    background-image: url(../img/fondo\ humo\ body\ -\ copia.png);
-    background-position-y: 35%;
+    background-image: url(../img/Mesa\ de\ trabajo\ 2.jpg);
+    background-position-y: 20%;
     background-size: cover;
     margin: 0px 0px !important;
     padding: 0px;
@@ -68,10 +69,17 @@ font-family: 'Roboto Mono', monospace;
 
 .textoMenu:hover {
     color: #cbb538 !important;
+    transform: scale(1.03);
+    transition: 0.9s;
+    text-shadow: 3px 3px 50px #000;
 }
 
 .cajaBusqueda {
     justify-content: center;
+}
+.cajaBusqueda:hover{
+    transform: scale(1.03);
+    transition: 0.9s;
 }
 
 .menuHamburguesa {
@@ -80,7 +88,7 @@ font-family: 'Roboto Mono', monospace;
 
 /* main */
 .fondo {
-    background-image: url(../img/fondo\ humo\ body.png);
+    background-image: url(../img/Mesa\ de\ trabajo\ 1.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 0%;
@@ -91,8 +99,7 @@ font-family: 'Roboto Mono', monospace;
     font-family: 'outlined';
     font-size: 3.5rem;
     color: #cec8c8;
-    opacity: 100%;
-    text-shadow: 0 0 50px #ffffff;
+    text-shadow: 1px 1px 50px #000;
 }
 
 .textoBienvenida {
@@ -152,7 +159,6 @@ footer {
     background-color: black;
     width: 100%;
     height: 100%;
-    border: solid 3px white;
 }
 
 .redes {
@@ -273,7 +279,7 @@ footer {
 }
 /* nosotros  */
 .fondoNosotros{
-    background-image: url(../img/fondo\ humo\ body.png);
+    background-image: url(../img/Mesa\ de\ trabajo\ 1.jpg);
     background-position: center;
     background-size: cover;
 }
