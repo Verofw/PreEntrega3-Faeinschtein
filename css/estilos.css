@@ -76,6 +76,7 @@ font-family: 'Roboto Mono', monospace;
 
 .cajaBusqueda {
     justify-content: center;
+
 }
 .cajaBusqueda:hover{
     transform: scale(1.03);
@@ -99,7 +100,7 @@ font-family: 'Roboto Mono', monospace;
     font-family: 'outlined';
     font-size: 3.5rem;
     color: #cec8c8;
-    text-shadow: 1px 1px 50px #000;
+    text-shadow: 10px 10px 10px #cbb538;
 }
 
 .textoBienvenida {
@@ -220,7 +221,7 @@ footer {
     font-size: 3.5rem;
     color: #ffffff;
     opacity: 70%;
-    text-shadow: 0 0 50px #abc068;
+    text-shadow: 10px 10px 10px #cbb538;
     padding: 40px 20px;
 }
 
@@ -232,12 +233,12 @@ footer {
 .cajaNotaUno {
     margin: 10px 5%;
     padding: 15px;
-    background-color: #00000081;
     width: 40%;
+    cursor: pointer;
 }
 
 .cajaNotaUno:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     transition: all 1.9s;
 }
 
@@ -310,6 +311,10 @@ footer {
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
     text-shadow: 0 0 5px #000;
+}
+.formulario input:hover{
+    transform: scale(1.01);
+    transition: all 1.9s;
 }
 .form-group{
     padding-left: 0px;
