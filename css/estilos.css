@@ -100,12 +100,12 @@ font-family: 'Roboto Mono', monospace;
     font-family: 'outlined';
     font-size: 3.5rem;
     color: #cec8c8;
-    text-shadow: 10px 10px 10px #cbb538;
+    text-shadow: 0 0 5px #cbb538;
 }
 
 .textoBienvenida {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-family: 'Roboto Mono', monospace;
     color: #ffffff;
     text-shadow: 1px 0 15px #cbb538;
@@ -221,7 +221,7 @@ footer {
     font-size: 3.5rem;
     color: #ffffff;
     opacity: 70%;
-    text-shadow: 10px 10px 10px #cbb538;
+    text-shadow: 0 0 5px #cbb538;
     padding: 40px 20px;
 }
 
