@@ -62,9 +62,10 @@ font-family: 'Roboto Mono', monospace;
     color: #ffffff;
 }
 
-.textoMenu:hover {
+.textoMenu:hover{
+    color:#cbb538;
     transform: scale(1.03);
-    transition: 0.9s;
+    transition: 0.5s;
     text-shadow: 3px 3px 50px #000;
 }
 
@@ -73,17 +74,17 @@ font-family: 'Roboto Mono', monospace;
 }
 .textoUbicacion:hover{
     transform: scale(1.03);
-    transition: 0.9s;
+    transition: 0.5s;
     text-shadow: 3px 3px 50px #000;
 }
 
 .cajaBusqueda {
     justify-content: center;
-
 }
-.cajaBusqueda:hover{
+.buscar:hover{
     transform: scale(1.03);
     transition: 0.9s;
+    box-shadow: 3px 3px 50px #000;
 }
 
 .menuHamburguesa {
@@ -356,7 +357,29 @@ footer {
 
 /* breakpoints */
 
+@media only screen and (max-width:992px){
+    .textoMenu{
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+    }
+    .textoUbicacion{
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+    }
+    .cajaBusqueda{
+        display: flex;
+        justify-content: start;
+        margin-left: 10px;
+    }
+}
+
 @media only screen and (max-width:650px) {
+    .cajaBusqueda{
+        width: 80%;
+    }
+
     .bienvenidos {
         font-size: 2.5rem;
     }
@@ -433,11 +456,27 @@ footer {
     }
 }
 
+    @media only screen and (max-width: 576px){
+        .cajaBusqueda{
+            width: 50%;
+            flex-flow: nowrap;
+            margin: 10px;
+        }
+        /* contacto  */
+        .titContacto{
+            font-size: 1.5rem;
+        }
+    }
+
     @media only screen and (max-width:440px) {
         .logo{
             font-size: 4rem;
             padding: 25px;
         }
+        .cajaBusqueda{
+            width: 80%;
+        }
+
         .bienvenidos {
             font-size: 2rem;
         }
@@ -500,6 +539,12 @@ footer {
         .titContacto{
             font-size: 2rem;
         }
+        .enviar{
+            font-size: 1rem;
+        }
+        .reset{
+            font-size: 1rem;
+        }
     }
     @media only screen and (max-width:350px){
         .logo {
@@ -509,7 +554,7 @@ footer {
             padding: 10px 16px;
         }
         .bienvenidos {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             padding: 5px 5px 10px 5px;
         }
 
@@ -575,5 +620,15 @@ footer {
         }
         .formulario{
             font-size: 1rem;
+        }
+        .enviar{
+            font-size: 0.9rem;
+            margin: 5px;
+            padding: 5px;
+        }
+        .reset{
+            font-size: 0.9rem;
+            margin: 5px;
+            padding: 5px;
         }
     }
