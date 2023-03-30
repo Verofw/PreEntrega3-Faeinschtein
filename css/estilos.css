@@ -18,10 +18,11 @@ font-family: 'Roboto Mono', monospace;
 
 .logo {
     font-size: 5rem;
-    color: #ffffff !important;
     padding: 0px 50px;
     text-shadow: 3px 3px 25px #ffffff;
     font-family: 'Big Shoulders Display', cursive;
+    transform: scale(1.03);
+    transition: 0.9s;
 }
 
 .logo:hover {
@@ -34,7 +35,6 @@ font-family: 'Roboto Mono', monospace;
     background-image: url(../img/Mesa\ de\ trabajo\ 2.jpg);
     background-position-y: 20%;
     background-size: cover;
-    margin: 0px 0px !important;
     padding: 0px;
     height: 100%;
 }
@@ -50,7 +50,7 @@ font-family: 'Roboto Mono', monospace;
 .items {
     width: 65%;
     justify-content: space-evenly;
-    margin-right: 30px !important;
+    margin-right: 30px;
 }
 
 .btn {
@@ -58,17 +58,20 @@ font-family: 'Roboto Mono', monospace;
     font-family: 'Roboto', sans-serif;
 }
 
-.btn:hover {
-    text-shadow: 1 1 25px #cbb538;
-    color: #cbb538;
-}
-
 .textoMenu {
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 .textoMenu:hover {
+    transform: scale(1.03);
+    transition: 0.9s;
+    text-shadow: 3px 3px 50px #000;
+}
+
+.textoUbicacion{
     color: #cbb538 !important;
+}
+.textoUbicacion:hover{
     transform: scale(1.03);
     transition: 0.9s;
     text-shadow: 3px 3px 50px #000;
@@ -234,11 +237,13 @@ footer {
     margin: 10px 5%;
     padding: 15px;
     width: 40%;
+    transform: scale(1.00);
+    transition: all 1.3s;
 }
 
 .cajaNotaUno:hover {
     transform: scale(1.01);
-    transition: all 1.9s;
+    transition: all 1.3s;
 }
 
 .tit1 {
@@ -288,8 +293,8 @@ footer {
     background-position: center;
     background-size: cover;
 }
-.carrousel{
-    width: 50% !important;
+.carouselCaja{
+    width: 50%;
     margin: 0 25%;
 }
 .card{
@@ -323,10 +328,6 @@ footer {
 .form-group{
     padding-left: 0px;
 }
-.reset{
-    font-size: 1rem;
-    height: 80%;
-}
 .suscripto{
     margin-right: 20px;
 }
@@ -343,9 +344,16 @@ footer {
     height: 20px;
     margin-left: 5px;
 }
+.btnContacto{
+    display: flex;
+    justify-content:start;
+    align-content: center;
+}
 .enviar{
     color: white;
+    margin-right: 20px;
 }
+
 /* breakpoints */
 
 @media only screen and (max-width:650px) {
@@ -380,6 +388,11 @@ footer {
     .rights {
         font-size: 2rem;
     }
+    .subir{
+            height: 80px;
+            width: 80px;
+            bottom: 80px;
+    }
 
     /* noticias */
 
@@ -406,6 +419,9 @@ footer {
     /* fabrica */
     .titFabrica{
         font-size: 2rem;
+    }
+    .cajaFabrica{
+        width: 100%;
     }
 
     /* nosotros */
