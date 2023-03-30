@@ -19,7 +19,7 @@ font-family: 'Roboto Mono', monospace;
 .logo {
     font-size: 5rem;
     color: #ffffff !important;
-    padding: 20px 50px;
+    padding: 0px 50px;
     text-shadow: 3px 3px 25px #ffffff;
     font-family: 'Big Shoulders Display', cursive;
 }
@@ -184,7 +184,7 @@ footer {
     background-color: darkgray;
     text-align: center;
     position: fixed;
-    bottom: 130px;
+    bottom: 50px;
     right: 32px;
     line-height: 100px;
     border-radius: 48px;
@@ -234,7 +234,6 @@ footer {
     margin: 10px 5%;
     padding: 15px;
     width: 40%;
-    cursor: pointer;
 }
 
 .cajaNotaUno:hover {
@@ -277,6 +276,11 @@ footer {
 .boton:hover{
     background-color: #333;
     color: white;
+}
+.cajaFabrica{
+    margin: 10px 5%;
+    padding: 15px;
+    width: 40%;
 }
 /* nosotros  */
 .fondoNosotros{
