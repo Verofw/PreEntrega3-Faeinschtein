@@ -19,7 +19,7 @@
     <header>
         <!-- nav bar inicia -->
         <!-- logo -->
-        <nav class="barra navbar navbar-expand-lg navbar-dark border border-light">
+        <nav class="barra navbar navbar-expand-lg navbar-dark border border-light" id="barra">
             <a class="navbar-brand logo" href="../index.html">FdS</a>
             <button class="navbar-toggler menu menuHamburguesa" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -31,22 +31,22 @@
             <div class="navBar collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="items navbar-nav mr-auto">
                     <li class="nav-item btn">
-                        <a class="textoUbicacion nav-link" href="./noticias.html">Noticias</a>
+                        <a class="textoUbicacion" href="./noticias.html">Noticias</a>
                     </li>
                     <li class="nav-item btn">
-                        <a class="textoMenu nav-link text-light" href="./fabrica.html">Fábrica</a>
+                        <a class="textoMenu text-decoration-none" href="./fabrica.html">Fábrica</a>
                     </li>
                     <li class="nav-item btn">
-                        <a class="textoMenu nav-link text-light" href="./nosotros.html">Nosotros</a>
+                        <a class="textoMenu text-decoration-none" href="./nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item btn">
-                        <a class="textoMenu nav-link text-light" href="./contacto.html">Contacto</a>
+                        <a class="textoMenu text-decoration-none" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
                 <!-- terminan items  -->
                 <!-- busqueda -->
                 <form class="form-inline my-2 my-lg-0 cajaBusqueda">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <input class="buscar form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" />
                     <button class="btn my-2 my-sm-0" type="submit">
                         🔎
                     </button>
@@ -54,11 +54,18 @@
                 <!-- fin busqueda  -->
             </div>
         </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="guia breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Noticias</li>
+            </ol>
+        </nav>
     </header>
     <main class="fondo">
         <div class="container-fluid">
             <div class="row">
-                <h1 class="tituloNoticias text-uppercase col-12 font-weight-bold">Todas las noticias del cine terror!</h1>
+                <h1 class="tituloNoticias text-uppercase col-12 font-weight-bold">Todas las noticias del cine terror!
+                </h1>
             </div>
         </div>
         <section class="noticias container-fluid row">
@@ -88,7 +95,8 @@
                 </ul>
                 <div class="card-body">
                     <q class="quote">
-                        Te gustaron las pelis de Ari Aster? Ya tenemos subido al canal el resumen de <spam>Midsommar!</spam>
+                        Te gustaron las pelis de Ari Aster? Ya tenemos subido al canal el resumen de <spam>Midsommar!
+                        </spam>
                     </q>
                 </div>
                 <button type="button" class="btn btn-sm boton">Contanos tu opinión!</button>
@@ -98,7 +106,8 @@
                 <img src="../img/conjuro.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title tit1">BOMBA en el Universo del Conjuro</h5>
-                    <p class="card-text des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque doloribus harum esse placeat?
+                    <p class="card-text des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque doloribus
+                        harum esse placeat?
                         Cupiditate iusto, cum mollitia vel</p>
                 </div>
                 <ul class="list-group list-group-flush tabla">
@@ -112,8 +121,7 @@
                     <li class="list-group-item">
                         <spam class="font-weight-bold">Valoracion en IMDB:</spam>
                         <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-regular fa-star"></i></i></td>
                     </li>
                 </ul>
@@ -129,7 +137,9 @@
                 <img src="../img/la llamada.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title tit1">¿Otra entrega de The Ring?</h5>
-                    <p class="card-text des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis corporis voluptas deserunt ea voluptates odit temporibus harum aspernatur praesentium dignissimos rerum ex tempore reprehenderit doloribus illo, minus cum. Sit error libero quidem nihil</p>
+                    <p class="card-text des">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis corporis
+                        voluptas deserunt ea voluptates odit temporibus harum aspernatur praesentium dignissimos rerum
+                        ex tempore reprehenderit doloribus illo, minus cum. Sit error libero quidem nihil</p>
                 </div>
                 <ul class="list-group list-group-flush tabla">
                     <li class="list-group-item text-center font-weight-bold">Info que tenes que saber</li>
@@ -137,13 +147,12 @@
                         <spam class="font-weight-bold">Elenco posible:</spam> Naomi Watts, Martin Freeman, Adam Brody
                     </li>
                     <li class="list-group-item">
-                        <spam class="font-weight-bold">Director:</spam> Gore Verbinski 
+                        <spam class="font-weight-bold">Director:</spam> Gore Verbinski
                     </li>
                     <li class="list-group-item">
                         <spam class="font-weight-bold">Valoracion en IMDB:</spam>
                         <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
                                 class="fa-regular fa-star"></i></i></td>
                     </li>
                 </ul>
@@ -159,7 +168,9 @@
                 <img src="../img/el exorcista.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title tit1">Una nueva version de "El Exorcista" llega al cine</h5>
-                    <p class="card-text des">Siguendo la nueva ola de remakes y reboots a los grandes clasicos, llegó el <em>(no)</em> esperado turno a El Exorcista. Éste clásico de los 80 ahora será actualizado bajo la mirada de David Gordon Green.</p>
+                    <p class="card-text des">Siguendo la nueva ola de remakes y reboots a los grandes clasicos, llegó el
+                        <em>(no)</em> esperado turno a El Exorcista. Éste clásico de los 80 ahora será actualizado bajo
+                        la mirada de David Gordon Green.</p>
                 </div>
                 <ul class="list-group list-group-flush tabla">
                     <li class="list-group-item text-center font-weight-bold">Info que tenes que saber</li>
@@ -167,17 +178,20 @@
                         <spam class="font-weight-bold">Elenco:</spam> Ellen Burstyn repetirá su papel original
                     </li>
                     <li class="list-group-item">
-                        <spam class="font-weight-bold">Director:</spam> David Gordon Green 
+                        <spam class="font-weight-bold">Director:</spam> David Gordon Green
                     </li>
                     <li class="list-group-item">
                         <spam class="font-weight-bold">Valoracion en IMDB:</spam>
-                        <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+                        <td><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i>
                         </td>
                     </li>
                 </ul>
                 <div class="card-body">
                     <q class="quote">
-                        Que opinás de las remakes a los clásicos de terror? A mi me aburren un poco, y a vos? Te gustan o preferis la nostalgia del original?
+                        Que opinás de las remakes a los clásicos de terror? A mi me aburren un poco, y a vos? Te gustan
+                        o preferis la nostalgia del original?
                     </q>
                 </div>
                 <button type="button" class="btn btn-sm boton">Dejá tu opinión!</button>
@@ -208,4 +222,5 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

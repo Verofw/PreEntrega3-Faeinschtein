@@ -17,7 +17,7 @@
 <header>
     <!-- nav bar inicia -->
     <!-- logo -->
-    <nav class="barra navbar navbar-expand-lg navbar-dark border border-light">
+    <nav class="barra navbar navbar-expand-lg navbar-dark border border-light" id="barra">
         <a class="navbar-brand logo" href="../index.html">FdS</a>
         <button class="navbar-toggler menu menuHamburguesa" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -29,28 +29,34 @@
         <div class="navBar collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="items navbar-nav mr-auto">
                 <li class="nav-item btn">
-                    <a class="nav-link textoMenu text-light" href="./noticias.html">Noticias</a>
+                    <a class="textoMenu text-decoration-none" href="./noticias.html">Noticias</a>
                 </li>
                 <li class="nav-item btn">
-                    <a class="nav-link textoMenu text-light" href="./fabrica.html">Fábrica</a>
+                    <a class="textoMenu text-decoration-none" href="./fabrica.html">Fábrica</a>
                 </li>
                 <li class="nav-item btn">
-                    <a class="nav-link textoMenu text-light" href="./nosotros.html">Nosotros</a>
+                    <a class="textoMenu text-decoration-none" href="./nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item btn">
-                    <a class="textoUbicacion nav-link" href="./contacto.html">Contacto</a>
+                    <a class="textoUbicacion" href="./contacto.html">Contacto</a>
                 </li>
             </ul>
             <!-- terminan items  -->
             <!-- busqueda -->
             <form class="form-inline my-2 my-lg-0 cajaBusqueda">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" />
+                <input class="buscar form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search" />
                 <button class="btn my-2 my-sm-0" type="submit">
                     🔎
                 </button>
             </form>
             <!-- fin busqueda  -->
         </div>
+    </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="guia breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
     </nav>
 </header>
 <main class="fondoNosotros">
@@ -106,14 +112,12 @@
             <label for="comment">Dejanos tu mensaje</label>
             <textarea class="form-control" rows="5" id="comment"></textarea>
         </div>
-        <div class="botonesContactoReset">
-            <div class="btnContacto">
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-secondary btn-lg enviar">Enviar</button>
-                </div>
-                <div class="limpiarCampos d-flex justify-content-center">
-                    <input class="btn btn-secondary btn-lg reset" type="reset" value="Limpiar campos">
-                </div>
+        <div class="btnContacto">
+            <div class="d-flex justify-content-center">
+                <button type="button" class="enviar btn btn-secondary btn-lg">Enviar</button>
+            </div>
+            <div class="limpiarCampos d-flex justify-content-center">
+                <input class="reset btn btn-secondary btn-lg" type="reset" value="Limpiar campos">
             </div>
         </div>
     </form>

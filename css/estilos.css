@@ -64,18 +64,11 @@ font-family: 'Roboto Mono', monospace;
 
 .textoMenu:hover{
     color:#cbb538;
-    transform: scale(1.03);
-    transition: 0.5s;
     text-shadow: 3px 3px 50px #000;
 }
 
 .textoUbicacion{
-    color: #cbb538 !important;
-}
-.textoUbicacion:hover{
-    transform: scale(1.03);
-    transition: 0.5s;
-    text-shadow: 3px 3px 50px #000;
+    color: #cbb538;
 }
 
 .cajaBusqueda {
@@ -188,7 +181,7 @@ footer {
     background-color: darkgray;
     text-align: center;
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 32px;
     line-height: 100px;
     border-radius: 48px;
@@ -219,6 +212,16 @@ footer {
 
 /* noticias */
 
+.guia{
+    background-color: #000;
+    margin: 0;
+    border-radius: 0;
+}
+
+.guia a{
+    color: #cbb538;
+    font-family: 'Roboto Mono', monospace;
+}
 .tituloNoticias {
     text-align: center;
     font-family: 'outlined';
@@ -414,7 +417,8 @@ footer {
     .subir{
             height: 80px;
             width: 80px;
-            bottom: 80px;
+            bottom: 10px;
+            line-height: 80px;
     }
 
     /* noticias */
@@ -454,6 +458,13 @@ footer {
     .descripcion{
         font-size: 1.2rem;
     }
+    /* contacto */
+    .titContacto{
+        padding: 20px;
+    }
+    .formulario{
+        margin-top: 20px;
+    }
 }
 
     @media only screen and (max-width: 576px){
@@ -465,10 +476,14 @@ footer {
         /* contacto  */
         .titContacto{
             font-size: 1.5rem;
+            padding: 10px 15px;
+        }
+        .formulario{
+            margin-top: 10px;
         }
     }
 
-    @media only screen and (max-width:440px) {
+    @media only screen and (max-width:460px) {
         .logo{
             font-size: 4rem;
             padding: 25px;
@@ -502,12 +517,13 @@ footer {
             font-size: 1rem;
         }
         .subir{
-            width: 80px;
-            height: 80px;
+            width: 50px;
+            height: 50px;
             text-align: center;
+            line-height: 50px;
         }
         .subir a{
-            font-size: 3rem;
+            font-size: 2rem;
 
         }
         /* noticias  */
@@ -537,7 +553,8 @@ footer {
         }
         /* contacto  */
         .titContacto{
-            font-size: 2rem;
+            font-size: 1.3rem;
+            margin-top: 10px;
         }
         .enviar{
             font-size: 1rem;
