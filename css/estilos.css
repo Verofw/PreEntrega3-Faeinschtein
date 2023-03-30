@@ -70,6 +70,10 @@ font-family: 'Roboto Mono', monospace;
 .textoUbicacion{
     color: #cbb538;
 }
+.textoUbicacion:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
 
 .cajaBusqueda {
     justify-content: center;
@@ -220,7 +224,7 @@ footer {
 
 .guia a{
     color: #cbb538;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
 }
 .tituloNoticias {
     text-align: center;
