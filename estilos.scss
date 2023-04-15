@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Big+Shoulders+Display:wght@700&family=Roboto&family=Roboto+Mono:wght@100&display=swap');
+
+@font-face {
+    font-family: outlined;
+    src: url(../assets/fonts/horizon_outlined.otf);
+}
+
+//paleta de colores//
+$color1: #cbb538;
+$color2: #0000;
+$color3: #ffff;
+$colorshadow1: #a1a1a1;
+$colorshadow2: #d2c88f;
+//fonts//
+$tipografia1: 'Roboto', sans-serif;
+$tipografia2: 'Big Shoulders Display', cursive;
+$tipografia3: 'Roboto Mono', monospace;
+$tipografia4: 'Anonymous Pro', monospace;
+
+html {
+    scroll-behavior: smooth;
+}
+
+.barra {
+    background-image: url(../img/Mesa\ de\ trabajo\ 2.jpg);
+    background-position-y: 20%;
+    background-size: cover;
+    padding: 0px;
+    height: 100%;
+
+    .menuHamburguesa {
+        margin: 30px;
+    }
+
+    .logo {
+        font-size: 5rem;
+        padding: 0px 50px;
+        text-shadow: 3px 3px 25px #ffffff;
+        font-family: 'Big Shoulders Display', cursive;
+        transform: scale(1.03);
+        transition: 0.9s;
+    }
+
+    .logo:hover {
+        transform: scale(1.03);
+        transition: 0.9s;
+        text-shadow: 3px 3px 50px #000;
+    }
+
+    .menu {
+        background-color: rgb(140, 154, 114);
+    }
+
+    .navegacion {
+        justify-content: space-between;
+
+        .items {
+            width: 65%;
+            justify-content: space-evenly;
+            margin-right: 30px;
+
+            .btn {
+                font-size: 1.5rem;
+                font-family: 'Roboto', sans-serif;
+
+                .textoMenu {
+                    color: #ffffff;
+                }
+
+                .textoMenu:hover {
+                    color: #cbb538;
+                    text-shadow: 3px 3px 50px #000;
+                }
+
+                .textoUbicacion {
+                    color: #cbb538;
+                }
+
+                .textoUbicacion:hover {
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .cajaBusqueda {
+            justify-content: center;
+
+            .buscar:hover {
+                transform: scale(1.03);
+                transition: 0.9s;
+                box-shadow: 3px 3px 50px #000;
+            }
+        }
+    }
+}
+.fondo {
+    background-image: url(../img/Mesa\ de\ trabajo\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 0%;
+    margin-bottom: 0px;
+
+    .bienvenidos {
+        font-family: 'outlined';
+        font-size: 3.5rem;
+        color: #cec8c8;
+        text-shadow: 0 0 5px #cbb538;
+    }
+    
+    .textoBienvenida {
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: 'Roboto Mono', monospace;
+        color: #ffffff;
+        text-shadow: 1px 0 15px #cbb538;
+
+        .ytb {
+            font-family: 'Roboto Mono', monospace;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 0 0 5rem #ffffff;
+            text-decoration: none;
+        }
+        .ytb:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    .laFabrica {
+        text-align: center;
+        font-family: 'Anonymous Pro', monospace;
+        font-size: 5rem;
+        margin-top: 5rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-shadow: 0 0 10px #a1a1a1;
+    }
+    
+    .sustos {
+        text-align: center;
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 15rem;
+        color: #ffffff;
+        letter-spacing: 8px;
+        text-shadow: 0 0 70px #a1a1a1;
+    }
+
+    .banner {
+        max-width: 70%;
+        opacity: 80%;
+        margin: -15% 0 0 20%;
+    }
+    
+    .banner:hover {
+        opacity: 100%;
+        transform: scale(1.03);
+        transition: 0.9s;
+    }
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+
+    .redes {
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 4rem;
+            padding: 10px 32px;
+        }
+        
+        a:hover {
+            opacity: 50%;
+        }
+    }
+    .rights {
+        display: flex;
+        font-family: 'Roboto Mono', monospace;
+        color: white;
+        font-size: 1.5rem;
+        padding-bottom: 16px;
+        justify-content: center;
+    }
+}
+.subir {
+    height: 100px;
+    width: 100px;
+    background-color: darkgray;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 32px;
+    line-height: 100px;
+    border-radius: 48px;
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 3rem;
+    }
+
+    a:hover {
+        opacity: 50%;
+    }
+}
+
+.subir:hover {
+    background-color: #cbb538;
+}

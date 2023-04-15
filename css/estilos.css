@@ -16,134 +16,36 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Mono', monospace;
 */
 
-.logo {
-    font-size: 5rem;
-    padding: 0px 50px;
-    text-shadow: 3px 3px 25px #ffffff;
-    font-family: 'Big Shoulders Display', cursive;
-    transform: scale(1.03);
-    transition: 0.9s;
-}
 
-.logo:hover {
-    transform: scale(1.03);
-    transition: 0.9s;
-    text-shadow: 3px 3px 50px #000;
-}
 
-.barra {
-    background-image: url(../img/Mesa\ de\ trabajo\ 2.jpg);
-    background-position-y: 20%;
-    background-size: cover;
-    padding: 0px;
-    height: 100%;
-}
 
-.menu {
-    background-color: rgb(140, 154, 114);
-}
 
-.navBar {
-    justify-content: space-between;
-}
 
-.items {
-    width: 65%;
-    justify-content: space-evenly;
-    margin-right: 30px;
-}
 
-.btn {
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
-}
 
-.textoMenu {
-    color: #ffffff;
-}
 
-.textoMenu:hover{
-    color:#cbb538;
-    text-shadow: 3px 3px 50px #000;
-}
 
-.textoUbicacion{
-    color: #cbb538;
-}
-.textoUbicacion:hover{
-    text-decoration: none;
-    color: #ffffff;
-}
 
-.cajaBusqueda {
-    justify-content: center;
-}
-.buscar:hover{
-    transform: scale(1.03);
-    transition: 0.9s;
-    box-shadow: 3px 3px 50px #000;
-}
 
-.menuHamburguesa {
-    margin: 30px;
-}
+
+
+
+
+
+
+
+
 
 /* main */
-.fondo {
-    background-image: url(../img/Mesa\ de\ trabajo\ 1.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 0%;
-    margin-bottom: 0px;
-}
 
-.bienvenidos {
-    font-family: 'outlined';
-    font-size: 3.5rem;
-    color: #cec8c8;
-    text-shadow: 0 0 5px #cbb538;
-}
 
-.textoBienvenida {
-    text-align: center;
-    font-size: 1.6rem;
-    font-family: 'Roboto Mono', monospace;
-    color: #ffffff;
-    text-shadow: 1px 0 15px #cbb538;
-}
 
-.ytb {
-    font-family: 'Roboto Mono', monospace;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 0 0 5rem #ffffff;
-    text-decoration: none;
-}
 
-.ytb:hover {
-    color: white;
-    text-decoration: underline;
-}
 
-.laFabrica {
-    text-align: center;
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 5rem;
-    margin-top: 5rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-shadow: 0 0 10px #a1a1a1;
-}
 
-.sustos {
-    text-align: center;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 15rem;
-    color: #ffffff;
-    letter-spacing: 8px;
-    text-shadow: 0 0 70px #a1a1a1;
-}
+
+
+
 
 .banner {
     max-width: 70%;
