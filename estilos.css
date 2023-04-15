@@ -179,4 +179,87 @@ footer .rights {
   background-color: #cbb538;
 }
 
+.guia {
+  background-color: #000;
+  margin: 0;
+  border-radius: 0;
+}
+.guia a {
+  color: #cbb538;
+  font-family: "Roboto", sans-serif;
+}
+
+.tituloNoticias {
+  text-align: center;
+  font-family: "outlined";
+  font-size: 3.5rem;
+  color: #ffffff;
+  opacity: 70%;
+  text-shadow: 0 0 5px #cbb538;
+  padding: 40px 20px;
+}
+
+.noticias {
+  padding-right: 0px;
+  margin-right: 0px;
+}
+.noticias .cajaNotaUno {
+  margin: 10px 5%;
+  padding: 15px;
+  width: 40%;
+  transform: scale(1);
+  transition: all 1.3s;
+  background-color: rgba(0, 0, 0, 0.3098039216);
+}
+.noticias .cajaNotaUno .tit1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 0 0 15px #d2c88f;
+  padding: 10px;
+}
+.noticias .cajaNotaUno .des {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.noticias .cajaNotaUno .quote {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  font-style: italic;
+}
+.noticias .cajaNotaUno .boton {
+  background-color: #9bb554;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.noticias .cajaNotaUno .boton:hover {
+  background-color: #333;
+  color: white;
+}
+.noticias .cajaNotaUno:hover {
+  transform: scale(1.01);
+  transition: all 1.3s;
+}
+
+.cajaFabrica {
+  margin: 10px 5%;
+  padding: 15px;
+  width: 40%;
+}
+.cajaFabrica .boton {
+  background-color: #9bb554;
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+.cajaFabrica .boton:hover {
+  background-color: #333;
+  color: white;
+}
+
 /*# sourceMappingURL=estilos.css.map */

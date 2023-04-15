@@ -94,6 +94,7 @@ html {
         }
     }
 }
+
 .fondo {
     background-image: url(../img/Mesa\ de\ trabajo\ 1.jpg);
     background-position: center;
@@ -107,7 +108,7 @@ html {
         color: #cec8c8;
         text-shadow: 0 0 5px #cbb538;
     }
-    
+
     .textoBienvenida {
         text-align: center;
         font-size: 1.6rem;
@@ -122,6 +123,7 @@ html {
             text-shadow: 0 0 5rem #ffffff;
             text-decoration: none;
         }
+
         .ytb:hover {
             color: white;
             text-decoration: underline;
@@ -138,7 +140,7 @@ html {
         letter-spacing: 5px;
         text-shadow: 0 0 10px #a1a1a1;
     }
-    
+
     .sustos {
         text-align: center;
         font-family: 'Big Shoulders Display', cursive;
@@ -153,7 +155,7 @@ html {
         opacity: 80%;
         margin: -15% 0 0 20%;
     }
-    
+
     .banner:hover {
         opacity: 100%;
         transform: scale(1.03);
@@ -176,11 +178,12 @@ footer {
             font-size: 4rem;
             padding: 10px 32px;
         }
-        
+
         a:hover {
             opacity: 50%;
         }
     }
+
     .rights {
         display: flex;
         font-family: 'Roboto Mono', monospace;
@@ -190,6 +193,7 @@ footer {
         justify-content: center;
     }
 }
+
 .subir {
     height: 100px;
     width: 100px;
@@ -215,3 +219,97 @@ footer {
 .subir:hover {
     background-color: #cbb538;
 }
+
+.guia {
+    background-color: #000;
+    margin: 0;
+    border-radius: 0;
+
+    a {
+        color: #cbb538;
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.tituloNoticias {
+    text-align: center;
+    font-family: 'outlined';
+    font-size: 3.5rem;
+    color: #ffffff;
+    opacity: 70%;
+    text-shadow: 0 0 5px #cbb538;
+    padding: 40px 20px;
+}
+
+.noticias {
+    padding-right: 0px;
+    margin-right: 0px;
+
+    .cajaNotaUno {
+        margin: 10px 5%;
+        padding: 15px;
+        width: 40%;
+        transform: scale(1.00);
+        transition: all 1.3s;
+        background-color: #0000004f;
+
+        .tit1 {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            text-shadow: 0 0 15px #d2c88f;
+            padding: 10px;
+        }
+
+        .des {
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        .quote {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            color: white;
+            font-style: italic;
+        }
+
+        .boton {
+            background-color: #9bb554;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .boton:hover {
+            background-color: #333;
+            color: white;
+        }
+    }
+
+    .cajaNotaUno:hover {
+        transform: scale(1.01);
+        transition: all 1.3s;
+    }
+
+}
+.cajaFabrica{
+    margin: 10px 5%;
+    padding: 15px;
+    width: 40%;
+
+    .boton {
+        background-color: #9bb554;
+        margin-top: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .boton:hover {
+        background-color: #333;
+        color: white;
+    }
+}
+

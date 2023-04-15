@@ -47,151 +47,40 @@ font-family: 'Roboto Mono', monospace;
 
 
 
-.banner {
-    max-width: 70%;
-    opacity: 80%;
-    margin: -15% 0 0 20%;
-}
 
-.banner:hover {
-    opacity: 100%;
-    transform: scale(1.03);
-    transition: 0.9s;
-}
 
-footer {
-    background-color: black;
-    width: 100%;
-    height: 100%;
-}
 
-.redes {
-    display: flex;
-    justify-content: center;
-}
 
-.redes a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 4rem;
-    padding: 10px 32px;
-}
 
-.redes a:hover {
-    opacity: 50%;
-}
 
-.subir {
-    height: 100px;
-    width: 100px;
-    background-color: darkgray;
-    text-align: center;
-    position: fixed;
-    bottom: 20px;
-    right: 32px;
-    line-height: 100px;
-    border-radius: 48px;
-}
 
-.subir:hover {
-    background-color: #cbb538;
-}
 
-.subir a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 3rem;
-}
 
-.subir a:hover {
-    opacity: 50%;
-}
 
-.rights {
-    display: flex;
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-    font-size: 1.5rem;
-    padding-bottom: 16px;
-    justify-content: center;
-}
+
+
+
+
+
+
 
 /* noticias */
 
-.guia{
-    background-color: #000;
-    margin: 0;
-    border-radius: 0;
-}
 
-.guia a{
-    color: #cbb538;
-    font-family: 'Roboto', sans-serif;
-}
-.tituloNoticias {
-    text-align: center;
-    font-family: 'outlined';
-    font-size: 3.5rem;
-    color: #ffffff;
-    opacity: 70%;
-    text-shadow: 0 0 5px #cbb538;
-    padding: 40px 20px;
-}
 
-.noticias {
-    padding-right: 0px;
-    margin-right: 0px;
-}
 
-.cajaNotaUno {
-    margin: 10px 5%;
-    padding: 15px;
-    width: 40%;
-    transform: scale(1.00);
-    transition: all 1.3s;
-}
 
-.cajaNotaUno:hover {
-    transform: scale(1.01);
-    transition: all 1.3s;
-}
 
-.tit1 {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 0 0 15px #d2c88f;
-    padding: 10px;
-}
 
-.des {
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    margin-top: 10px;
-    font-size: 1.5rem;
-}
 
-.quote {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-    color: white;
-    font-style: italic;
-}
+
+
+
 /* fabrica */
 .botonFabrica{
     margin-top: 10px;
 }
-.boton{
-    background-color: #9bb554;
-    margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
-}
-.boton:hover{
-    background-color: #333;
-    color: white;
-}
+
 .cajaFabrica{
     margin: 10px 5%;
     padding: 15px;
