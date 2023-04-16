@@ -20,7 +20,7 @@ html {
 .barra .logo {
   font-size: 5rem;
   padding: 0px 50px;
-  text-shadow: 3px 3px 25px #ffffff;
+  text-shadow: 3px 3px 25px white;
   font-family: "Big Shoulders Display", cursive;
   transform: scale(1.03);
   transition: 0.9s;
@@ -28,7 +28,7 @@ html {
 .barra .logo:hover {
   transform: scale(1.03);
   transition: 0.9s;
-  text-shadow: 3px 3px 50px #000;
+  text-shadow: 3px 3px 50px rgba(0, 0, 0, 0);
 }
 .barra .menu {
   background-color: rgb(140, 154, 114);
@@ -46,18 +46,18 @@ html {
   font-family: "Roboto", sans-serif;
 }
 .barra .navegacion .items .btn .textoMenu {
-  color: #ffffff;
+  color: white;
 }
 .barra .navegacion .items .btn .textoMenu:hover {
   color: #cbb538;
-  text-shadow: 3px 3px 50px #000;
+  text-shadow: 3px 3px 50px rgba(0, 0, 0, 0);
 }
 .barra .navegacion .items .btn .textoUbicacion {
   color: #cbb538;
 }
 .barra .navegacion .items .btn .textoUbicacion:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
 }
 .barra .navegacion .cajaBusqueda {
   justify-content: center;
@@ -65,7 +65,7 @@ html {
 .barra .navegacion .cajaBusqueda .buscar:hover {
   transform: scale(1.03);
   transition: 0.9s;
-  box-shadow: 3px 3px 50px #000;
+  box-shadow: 3px 3px 50px rgba(0, 0, 0, 0);
 }
 
 .fondo {
@@ -85,14 +85,14 @@ html {
   text-align: center;
   font-size: 1.6rem;
   font-family: "Roboto Mono", monospace;
-  color: #ffffff;
+  color: white;
   text-shadow: 1px 0 15px #cbb538;
 }
 .fondo .textoBienvenida .ytb {
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
-  color: #ffffff;
-  text-shadow: 0 0 5rem #ffffff;
+  color: white;
+  text-shadow: 0 0 5rem white;
   text-decoration: none;
 }
 .fondo .textoBienvenida .ytb:hover {
@@ -104,7 +104,7 @@ html {
   font-family: "Anonymous Pro", monospace;
   font-size: 5rem;
   margin-top: 5rem;
-  color: #ffffff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-shadow: 0 0 10px #a1a1a1;
@@ -113,7 +113,7 @@ html {
   text-align: center;
   font-family: "Big Shoulders Display", cursive;
   font-size: 15rem;
-  color: #ffffff;
+  color: white;
   letter-spacing: 8px;
   text-shadow: 0 0 70px #a1a1a1;
 }
@@ -138,7 +138,7 @@ footer .redes {
   justify-content: center;
 }
 footer .redes a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
   font-size: 4rem;
   padding: 10px 32px;
@@ -168,7 +168,7 @@ footer .rights {
 }
 .subir a {
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-size: 3rem;
 }
 .subir a:hover {
@@ -193,7 +193,7 @@ footer .rights {
   text-align: center;
   font-family: "outlined";
   font-size: 3.5rem;
-  color: #ffffff;
+  color: white;
   opacity: 70%;
   text-shadow: 0 0 5px #cbb538;
   padding: 40px 20px;
@@ -203,15 +203,15 @@ footer .rights {
   padding-right: 0px;
   margin-right: 0px;
 }
-.noticias .cajaNotaUno {
+.noticias .cajaNotaUno, .noticias .cajaFabrica {
   margin: 10px 5%;
   padding: 15px;
   width: 40%;
   transform: scale(1);
   transition: all 1.3s;
-  background-color: rgba(0, 0, 0, 0.3098039216);
+  background-color: rgba(0, 0, 0, 0.5176470588);
 }
-.noticias .cajaNotaUno .tit1 {
+.noticias .cajaNotaUno .tit1, .noticias .cajaFabrica .tit1 {
   font-family: "Roboto", sans-serif;
   color: white;
   text-align: center;
@@ -219,47 +219,338 @@ footer .rights {
   text-shadow: 0 0 15px #d2c88f;
   padding: 10px;
 }
-.noticias .cajaNotaUno .des {
+.noticias .cajaNotaUno .des, .noticias .cajaFabrica .des {
   font-family: "Roboto", sans-serif;
   color: white;
   margin-top: 10px;
   font-size: 1.5rem;
 }
-.noticias .cajaNotaUno .quote {
+.noticias .cajaNotaUno .quote, .noticias .cajaFabrica .quote {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   color: white;
   font-style: italic;
 }
-.noticias .cajaNotaUno .boton {
-  background-color: #9bb554;
+.noticias .cajaNotaUno .boton, .noticias .cajaFabrica .boton {
+  background-color: #cbb538;
   margin-top: 20px;
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
 }
-.noticias .cajaNotaUno .boton:hover {
+.noticias .cajaNotaUno .boton:hover, .noticias .cajaFabrica .boton:hover {
   background-color: #333;
   color: white;
 }
-.noticias .cajaNotaUno:hover {
+.noticias .cajaNotaUno:hover, .noticias .cajaFabrica:hover {
   transform: scale(1.01);
   transition: all 1.3s;
 }
 
-.cajaFabrica {
-  margin: 10px 5%;
-  padding: 15px;
-  width: 40%;
-}
-.cajaFabrica .boton {
-  background-color: #9bb554;
-  margin-top: 20px;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-}
 .cajaFabrica .boton:hover {
   background-color: #333;
   color: white;
+}
+
+.carouselCaja {
+  width: 50%;
+  margin: 0 25%;
+}
+.carouselCaja .card {
+  background-color: rgba(0, 0, 0, 0.5176470588);
+  margin-bottom: 20px;
+}
+.carouselCaja .nombre {
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.carouselCaja .descripcion {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.formulario {
+  margin: 40px;
+  padding: 40px;
+  border: solid 5px #d2c88f;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+.formulario .form-group {
+  padding-left: 0px;
+}
+.formulario .formulario input:hover {
+  transform: scale(1.01);
+  transition: all 1.9s;
+}
+.formulario .suscripto {
+  margin-right: 20px;
+}
+.formulario .btnSiNo {
+  width: 20px;
+  height: 20px;
+}
+.formulario .newsletter {
+  padding-left: 0px;
+  margin: 10px 0;
+}
+.formulario .newsletter .btnNewsltt {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.formulario .btnContacto {
+  display: flex;
+  justify-content: start;
+  align-content: center;
+}
+.formulario .btnContacto .enviar {
+  color: white;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .textoMenu {
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+  }
+  .textoUbicacion {
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+  }
+  .cajaBusqueda {
+    display: flex;
+    justify-content: start;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .cajaBusqueda {
+    width: 80%;
+  }
+  .fondo .bienvenidos {
+    font-size: 2.5rem;
+  }
+  .fondo .textoBienvenida {
+    font-size: 1.2rem;
+  }
+  .fondo .laFabrica {
+    font-size: 3rem;
+  }
+  .fondo .sustos {
+    font-size: 10rem;
+  }
+  .fondo .banner {
+    margin: -20% 0 0 20%;
+  }
+  .footer {
+    margin: 10px;
+  }
+  .footer .redes a {
+    font-size: 4rem;
+  }
+  .footer .rights {
+    font-size: 2rem;
+  }
+  .subir {
+    height: 80px;
+    width: 80px;
+    bottom: 10px;
+    line-height: 80px;
+  }
+  .tituloNoticias {
+    font-size: 2.7rem;
+  }
+  .noticias {
+    margin: 0px;
+    padding: 0px;
+  }
+  .noticias .cajaNotaUno, .noticias .cajaFabrica {
+    width: 100%;
+  }
+  .noticias .cajaNotaUno .tit1, .noticias .cajaFabrica .tit1 {
+    font-size: 1.7rem;
+  }
+  .noticias .cajaNotaUno .des, .noticias .cajaFabrica .des {
+    font-size: 1.5rem;
+  }
+  .titFabrica {
+    font-size: 2rem;
+  }
+  .cajaFabrica {
+    width: 100%;
+  }
+  .nombre {
+    font-size: 2rem;
+  }
+  .descripcion {
+    font-size: 1.2rem;
+  }
+  .titContacto {
+    padding: 20px;
+  }
+  .formulario {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .cajaBusqueda {
+    width: 50%;
+    flex-flow: nowrap;
+    margin: 10px;
+  }
+  .titContacto {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+  }
+  .formulario {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .barra .logo {
+    font-size: 4rem;
+    padding: 25px;
+  }
+  .navegacion .cajaBusqueda {
+    width: 80%;
+  }
+  .fondo .bienvenidos {
+    font-size: 2rem;
+  }
+  .fondo .textoBienvenida {
+    font-size: 1rem;
+  }
+  .fondo .laFabrica {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+  }
+  .fondo .sustos {
+    font-size: 7rem;
+  }
+  footer .redes a {
+    font-size: 3rem;
+  }
+  footer .rights {
+    font-size: 0.8rem;
+  }
+  .subir {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+  }
+  .subir a {
+    font-size: 2rem;
+  }
+  .tituloNoticias {
+    font-size: 2.3rem;
+    padding-bottom: 10px;
+  }
+  .card-body .tit1 {
+    font-size: 2rem;
+    padding: 0px;
+  }
+  .card-body .des {
+    font-size: 1.2rem;
+  }
+  .titFabrica {
+    font-size: 1.8rem;
+  }
+  .card-body .nombre {
+    font-size: 1.5rem;
+  }
+  .card-body .descripcion {
+    font-size: 1rem;
+  }
+  .titContacto {
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+  .enviar {
+    font-size: 1rem;
+  }
+  .reset {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .barra .logo {
+    font-size: 3rem;
+  }
+  .fondo {
+    padding: 10px 16px;
+  }
+  .fondo .bienvenidos {
+    font-size: 1.5rem;
+    padding: 10px 5px 10px 5px;
+  }
+  .fondo .textoBienvenida {
+    font-size: 0.8rem;
+  }
+  .fondo .laFabrica {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  .fondo .sustos {
+    font-size: 5rem;
+  }
+  .fondo .banner {
+    max-width: 100%;
+    margin: -20% 0 0 0;
+    padding-bottom: 20%;
+  }
+  footer .redes a {
+    font-size: 2rem;
+  }
+  .rights {
+    font-size: 0.8rem;
+  }
+  .tituloNoticias {
+    font-size: 1.8rem;
+    padding-bottom: 5px;
+    padding-top: 10px;
+  }
+  .card-body {
+    padding: 10px 0;
+  }
+  .card-body .tit1 {
+    font-size: 1.5rem;
+    padding: 0px;
+  }
+  .card-body .des {
+    font-size: 0.9rem;
+  }
+  .card-body .quote {
+    font-size: 1rem;
+  }
+  .tabla li {
+    font-size: 1rem;
+    padding: 0px 5px;
+  }
+  .titFabrica {
+    font-size: 1.5rem;
+  }
+  .titContacto {
+    font-size: 1.5rem;
+  }
+  .formulario {
+    font-size: 1rem;
+  }
+  .formulario .enviar {
+    font-size: 0.9rem;
+    margin: 5px;
+    padding: 5px;
+  }
+  .formulario .reset {
+    font-size: 0.9rem;
+    margin: 5px;
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
