@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Big+Shoulders+Display:wght@700&family=Roboto&family=Roboto+Mono:wght@100&display=swap");
 @font-face {
   font-family: outlined;
-  src: url(../assets/fonts/horizon_outlined.otf);
+  src: url(./assets/fonts/horizon_outlined.otf);
 }
 * {
   margin: 0;
