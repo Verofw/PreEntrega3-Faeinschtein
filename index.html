@@ -12,12 +12,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./librerias css/wickedcss.min.css">
     <link rel="stylesheet" href="./estilos.css" />
 </head>
 
 <body>
     <header>
-        <nav class="barra navbar navbar-expand-lg navbar-dark border border-light">
+        <nav class="barra navbar navbar-expand-lg navbar-dark">
             <a class="logo navbar-brand text-light" href="#">FdS</a>
             <button class="navbar-toggler menu menuHamburguesa" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -58,15 +60,15 @@
                 para no perderte nada!
             </p>
             <p class="display-3 laFabrica">La fábrica de</p>
-            <p class="display-1 sustos">SUSTOS</p>
+            <p class="display-1 sustos pulse">SUSTOS</p>
             <div class="container-fluid d-flex justify-content-center">
                 <a target="_blank" href="https://www.youtube.com/channel/UCGn9CQUmYFKawStxPUEflWw">
-                    <img src="./img/Suscribite2.png" class="img-fluid banner" alt="..." />
+                    <img src="./img/Suscribite2.png" class="img-fluid grow" alt="..." data-aos="fade-up" />
                 </a>
             </div>
         </div>
-        <footer class="border border-light">
-            <div class="redes">
+        <footer>
+            <div class="redes" data-aos="zoom-in">
                 <a href="https://www.instagram.com/lafabricadesustos/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
@@ -85,6 +87,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>

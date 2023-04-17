@@ -3,14 +3,22 @@
   font-family: outlined;
   src: url(../assets/fonts/horizon_outlined.otf);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 .barra {
   background-image: url(../img/Mesa\ de\ trabajo\ 2.jpg);
-  background-position-y: 20%;
   background-size: cover;
+  background-position-y: 20%;
+  background: #232526;
+  background: linear-gradient(to right, #414345, #232526);
   padding: 0px;
   height: 100%;
 }
@@ -103,7 +111,7 @@ html {
   text-align: center;
   font-family: "Anonymous Pro", monospace;
   font-size: 5rem;
-  margin-top: 5rem;
+  margin: 5rem 0 0 0;
   color: white;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -117,21 +125,25 @@ html {
   letter-spacing: 8px;
   text-shadow: 0 0 70px #a1a1a1;
 }
-.fondo .banner {
+.fondo .grow {
   max-width: 70%;
-  opacity: 80%;
   margin: -15% 0 0 20%;
+  transition: 0.5s, color 0.1s;
+  -webkit-transition: 0.5s, color 0.1s;
+  -moz-transition: 0.5s, color 0.1s;
 }
-.fondo .banner:hover {
-  opacity: 100%;
-  transform: scale(1.03);
-  transition: 0.9s;
+.fondo .grow:hover {
+  transform: scale3d(1.1, 1.1, 0.3);
+  -webkit-transform: scale3d(1.1, 1.1, 0.3);
+  -moz-transform: scale3d(1.1, 1.1, 0.3);
 }
 
 footer {
-  background-color: black;
+  background: #232526;
+  background: linear-gradient(to right, #414345, #232526);
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 footer .redes {
   display: flex;
@@ -140,8 +152,8 @@ footer .redes {
 footer .redes a {
   color: white;
   text-decoration: none;
-  font-size: 4rem;
-  padding: 10px 32px;
+  font-size: 3.5rem;
+  padding: 15px 40px;
 }
 footer .redes a:hover {
   opacity: 50%;
@@ -150,9 +162,10 @@ footer .rights {
   display: flex;
   font-family: "Roboto Mono", monospace;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding-bottom: 16px;
   justify-content: center;
+  margin: 0;
 }
 
 .subir {
@@ -238,8 +251,10 @@ footer .rights {
   font-size: 1.5rem;
 }
 .noticias .cajaNotaUno .boton:hover, .noticias .cajaFabrica .boton:hover {
-  background-color: #333;
-  color: white;
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
 }
 .noticias .cajaNotaUno:hover, .noticias .cajaFabrica:hover {
   transform: scale(1.01);
@@ -247,8 +262,10 @@ footer .rights {
 }
 
 .cajaFabrica .boton:hover {
-  background-color: #333;
-  color: white;
+  box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  -moz-transform: translate(0px, 5px);
 }
 
 .carouselCaja {
@@ -267,6 +284,14 @@ footer .rights {
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   color: white;
+}
+.carouselCaja .boton {
+  color: white;
+  font-size: 2rem;
+}
+.carouselCaja .boton:hover {
+  color: #cbb538;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0);
 }
 
 .formulario {
@@ -483,7 +508,7 @@ footer .rights {
     font-size: 3rem;
   }
   .fondo {
-    padding: 10px 16px;
+    padding: 10px 0;
   }
   .fondo .bienvenidos {
     font-size: 1.5rem;
@@ -491,6 +516,7 @@ footer .rights {
   }
   .fondo .textoBienvenida {
     font-size: 0.8rem;
+    padding: 0 10px;
   }
   .fondo .laFabrica {
     font-size: 2rem;
@@ -504,10 +530,14 @@ footer .rights {
     margin: -20% 0 0 0;
     padding-bottom: 20%;
   }
+  footer {
+    width: 100%;
+    height: 8rem;
+  }
   footer .redes a {
     font-size: 2rem;
   }
-  .rights {
+  footer .rights {
     font-size: 0.8rem;
   }
   .tituloNoticias {
@@ -515,17 +545,17 @@ footer .rights {
     padding-bottom: 5px;
     padding-top: 10px;
   }
-  .card-body {
+  .cajaNotaUno .card-body, .cajaFabrica .card-body {
     padding: 10px 0;
   }
-  .card-body .tit1 {
+  .cajaNotaUno .card-body .tit1, .cajaFabrica .card-body .tit1 {
     font-size: 1.5rem;
     padding: 0px;
   }
-  .card-body .des {
-    font-size: 0.9rem;
+  .cajaNotaUno .card-body .des, .cajaFabrica .card-body .des {
+    font-size: 1rem;
   }
-  .card-body .quote {
+  .cajaNotaUno .card-body .quote, .cajaFabrica .card-body .quote {
     font-size: 1rem;
   }
   .tabla li {
@@ -540,17 +570,21 @@ footer .rights {
   }
   .formulario {
     font-size: 1rem;
+    margin: 10px 20px;
+  }
+  .formulario .btnSiNo {
+    width: 15px;
+    height: 15px;
+    flex-wrap: wrap;
   }
   .formulario .enviar {
     font-size: 0.9rem;
-    margin: 5px;
+    margin: 1px;
     padding: 5px;
   }
   .formulario .reset {
     font-size: 0.9rem;
-    margin: 5px;
+    margin: 1px;
     padding: 5px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

@@ -13,11 +13,18 @@ $color4: #333;
 $colorshadow1: #a1a1a1;
 $colorshadow2: #d2c88f;
 $colortransparencia: #00000084;
+
 //fonts//
 $tipografia1: 'Roboto', sans-serif;
 $tipografia2: 'Big Shoulders Display', cursive;
 $tipografia3: 'Roboto Mono', monospace;
 $tipografia4: 'Anonymous Pro', monospace;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -25,8 +32,11 @@ html {
 
 .barra {
     background-image: url(../img/Mesa\ de\ trabajo\ 2.jpg);
-    background-position-y: 20%;
     background-size: cover;
+    background-position-y: 20%;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
     padding: 0px;
     height: 100%;
 
@@ -136,7 +146,7 @@ html {
         text-align: center;
         font-family: $tipografia4;
         font-size: 5rem;
-        margin-top: 5rem;
+        margin: 5rem 0 0 0;
         color: $color3;
         text-transform: uppercase;
         letter-spacing: 5px;
@@ -152,23 +162,29 @@ html {
         text-shadow: 0 0 70px $colorshadow1;
     }
 
-    .banner {
+    .grow {
         max-width: 70%;
-        opacity: 80%;
         margin: -15% 0 0 20%;
+        transition: .5s, color .10s;
+        -webkit-transition: .5s, color .10s;
+        -moz-transition: .5s, color .10s;
     }
 
-    .banner:hover {
-        opacity: 100%;
-        transform: scale(1.03);
-        transition: 0.9s;
+    .grow:hover {
+        transform: scale3d(1.1, 1.1, 0.3);
+        -webkit-transform: scale3d(1.1, 1.1, 0.3);
+        -moz-transform: scale3d(1.1, 1.1, 0.3);
     }
+
 }
 
 footer {
-    background-color: black;
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);
+    background: linear-gradient(to right, #414345, #232526);
     width: 100%;
     height: 100%;
+    margin: 0;
 
     .redes {
         display: flex;
@@ -177,8 +193,8 @@ footer {
         a {
             color: $color3;
             text-decoration: none;
-            font-size: 4rem;
-            padding: 10px 32px;
+            font-size: 3.5rem;
+            padding: 15px 40px;
         }
 
         a:hover {
@@ -190,9 +206,10 @@ footer {
         display: flex;
         font-family: $tipografia3;
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding-bottom: 16px;
         justify-content: center;
+        margin: 0;
     }
 }
 
@@ -286,8 +303,10 @@ footer {
         }
 
         .boton:hover {
-            background-color:$color4;
-            color: white;
+            box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+            transform: translate(0px, 5px);
+            -webkit-transform: translate(0px, 5px);
+            -moz-transform: translate(0px, 5px);
         }
     }
 
@@ -306,8 +325,10 @@ footer {
     }
 
     .boton:hover {
-        background-color:$color4;
-        color: white;
+        box-shadow: 0 8px 8px 0 #000000, 0 8px 8px 0 #000000;
+        transform: translate(0px, 5px);
+        -webkit-transform: translate(0px, 5px);
+        -moz-transform: translate(0px, 5px);
     }
 }
 
@@ -329,6 +350,16 @@ footer {
         font-size: 1.5rem;
         font-family: $tipografia1;
         color: white;
+    }
+
+    .boton {
+        color: $color3;
+        font-size: 2rem;
+    }
+
+    .boton:hover {
+        color: $color1;
+        text-shadow: 5px 5px 10px $color2;
     }
 }
 
@@ -614,7 +645,7 @@ footer {
     }
 
     .fondo {
-        padding: 10px 16px;
+        padding: 10px 0;
 
 
         .bienvenidos {
@@ -624,6 +655,7 @@ footer {
 
         .textoBienvenida {
             font-size: 0.8rem;
+            padding: 0 10px;
         }
 
         .laFabrica {
@@ -642,12 +674,17 @@ footer {
         }
     }
 
-    footer .redes a {
-        font-size: 2rem;
-    }
+    footer {
+        width: 100%;
+        height: 8rem;
 
-    .rights {
-        font-size: 0.8rem;
+        .redes a {
+            font-size: 2rem;
+        }
+
+        .rights {
+            font-size: 0.8rem;
+        }
     }
 
     //noticias//
@@ -657,7 +694,7 @@ footer {
         padding-top: 10px;
     }
 
-    .card-body {
+    .cajaNotaUno .card-body {
         padding: 10px 0;
 
         .tit1 {
@@ -666,7 +703,7 @@ footer {
         }
 
         .des {
-            font-size: 0.9rem;
+            font-size: 1rem;
         }
 
         .quote {
@@ -691,16 +728,23 @@ footer {
 
     .formulario {
         font-size: 1rem;
+        margin: 10px 20px;
+
+        .btnSiNo {
+            width: 15px;
+            height: 15px;
+            flex-wrap: wrap;
+        }
 
         .enviar {
             font-size: 0.9rem;
-            margin: 5px;
+            margin: 1px;
             padding: 5px;
         }
 
         .reset {
             font-size: 0.9rem;
-            margin: 5px;
+            margin: 1px;
             padding: 5px;
         }
     }
