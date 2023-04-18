@@ -61,11 +61,11 @@ html {
   text-shadow: 3px 3px 50px rgba(0, 0, 0, 0);
 }
 .barra .navegacion .items .btn .textoUbicacion {
-  color: #cbb538;
+  color: #d2c88f;
 }
 .barra .navegacion .items .btn .textoUbicacion:hover {
   text-decoration: none;
-  color: white;
+  color: #cbb538;
 }
 .barra .navegacion .cajaBusqueda {
   justify-content: center;
@@ -220,8 +220,6 @@ footer .rights {
   margin: 10px 5%;
   padding: 15px;
   width: 40%;
-  transform: scale(1);
-  transition: all 1.3s;
   background-color: rgba(0, 0, 0, 0.5176470588);
 }
 .noticias .cajaNotaUno .tit1, .noticias .cajaFabrica .tit1 {
@@ -255,10 +253,6 @@ footer .rights {
   transform: translate(0px, 5px);
   -webkit-transform: translate(0px, 5px);
   -moz-transform: translate(0px, 5px);
-}
-.noticias .cajaNotaUno:hover, .noticias .cajaFabrica:hover {
-  transform: scale(1.01);
-  transition: all 1.3s;
 }
 
 .cajaFabrica .boton:hover {

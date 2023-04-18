@@ -85,12 +85,12 @@ html {
                 }
 
                 .textoUbicacion {
-                    color: $color1;
+                    color: $colorshadow2;
                 }
 
                 .textoUbicacion:hover {
                     text-decoration: none;
-                    color: $color3;
+                    color: $color1;
                 }
             }
         }
@@ -268,8 +268,6 @@ footer {
         margin: 10px 5%;
         padding: 15px;
         width: 40%;
-        transform: scale(1.00);
-        transition: all 1.3s;
         background-color: $colortransparencia;
 
         .tit1 {
@@ -309,12 +307,6 @@ footer {
             -moz-transform: translate(0px, 5px);
         }
     }
-
-    .cajaNotaUno:hover {
-        transform: scale(1.01);
-        transition: all 1.3s;
-    }
-
 }
 
 .cajaFabrica {
